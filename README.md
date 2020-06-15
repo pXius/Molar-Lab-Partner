@@ -48,7 +48,7 @@ python main.py
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 Molar-Lab-Partner uses the inceredible [molmass library created by Christoph Gohlke](https://pypi.org/project/molmass/) as it's foundation.
