@@ -145,7 +145,7 @@ class Ui(QtWidgets.QMainWindow):
 		self.generalModepop = QMessageBox()
 		self.generalModepop.setIcon(QMessageBox.Information)
 		self.generalModepop.setWindowTitle('General Dilution Mode')
-		self.generalModepop.setText(15*" "+'When using General Dilution Mode:'+30*" "+'\n\nMake sure to use the same unit of measurement\nfor both M1, M2 and V1, V2.\n\nClick Details for an example.')
+		self.generalModepop.setText('When using General Dilution Mode:'+30*" "+'\n\nMake sure to use the same unit of measurement\nfor both M1, M2 and V1, V2.\n\nClick Details for an example.')
 		self.generalModepop.setDetailedText("Using the same unit of measurement for M1, M2 and V1, V2:\nM1 = 100g\nM2 = 1500g\nV1 = 0.4 Liters\nV2 = 1.3 Liters\nNote how both parameters share the same units of measurement.")
 		self.generalModepop.exec_()
 
