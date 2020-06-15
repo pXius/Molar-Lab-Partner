@@ -738,14 +738,14 @@ class Composition(tuple):
         result = ['\nElement\tNumber\tRelative Mass\tFraction %\n------------------------------------------------------------------------------']
         for symbol, count, mass, fraction in self:
             result.append(
-                '{:<6s}\t{:<4}\t{:<12.{}f}\t{:<10.4f}'.format(
+                '{:<6s}\t{:<4}\t{:<.{}f}\t\t{:.4f}'.format(
                     symbol, count, mass, prec, fraction * 100
                 )
             )
         if len(self) > 1:
             count, mass, fraction = self.total
             result.append(
-                '{:<6s}\t{:<4}\t{:<12.{}f}\t{:<10.4f}'.format(
+                '{:<6s}\t{:<4}\t{:<.{}f}\t\t{:.4f}'.format(
                     '_______________________________________________________________\nTotal:', count, mass, prec, fraction * 100
                 )
             )
