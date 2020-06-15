@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Molar Lab Partner</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1291</width>
+      <height>841</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPlainTextEdit" name="formulaInput">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>561</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Lato</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Formulas are CaSe-sEnSaTivE.
+
+Examples of valid formulas are:
+H2O, [2H]2O, CaCl2, Au, CH3COOH, EtOH, CuSO4.5H2O, (COOH)2, AgCuRu4(H)2[CO]12{PPh3}2, CGCGAATTCGCG, and MDRGEQGLLK</string>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+     <property name="plainText">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Examples: H2O, [2H]2O, CaCl2</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>561</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Molar Mass</string>
+      </attribute>
+      <widget class="QTextBrowser" name="massOutput">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>481</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b1">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(197, 215, 255);
+font: 63 12pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Calculate Formula Mass</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Moles of Solute</string>
+      </attribute>
+      <widget class="QTextBrowser" name="molValueOutput">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>210</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(197, 215, 255);
+font: 63 12pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Weight of Solute</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="subGram">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>351</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Where n is the Moles of Solute, 
+M is the Molar Mass of 1 Mol of the formula,
+and m is the solute weight.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>sol.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="soluteWeight">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>140</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Grams (g)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Milligrams (mg)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Calculate Moles of Solute</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Molarity Calculator</string>
+      </attribute>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>mass.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Where M is Molarity, n is Moles of Solute
+and V is liters of solution.</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="molarity">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="molarityCombo">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>280</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Molar (M)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Millimolar (mM)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Micromolar (uM)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPlainTextEdit" name="molValueOutput2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>250</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="subGram2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Weight of Solute</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="soluteWeight2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>130</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Grams (g)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Milligrams (mg)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QRadioButton" name="radmol">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Molarity</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radvol">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>230</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Volume</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radsol">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>230</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Moles of Solute</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="volumeCombo">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>280</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Liter (L)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Milliliter (ml)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Microliter (ul)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPlainTextEdit" name="volume">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>250</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="weightCheck">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>341</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Use solute weigh to calculate Moles of Solute</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="molarityCombo_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>280</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Molar (M)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Millimolar (mM)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Micromolar (uM)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>270</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>equal.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>260</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>divide.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reqweight">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>180</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Required solute weight will be calculated!</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b6">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>10</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 12pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Clear All</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b3">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>70</y>
+         <width>111</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>12</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(197, 215, 255);
+font: 63 12pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Dilution Calculator</string>
+      </attribute>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>dilute.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>321</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Where M1 is Molarity of the stock solution,
+V1 is the Volume of the stock solution.
+M2 and V2 is the Molarity and Volume of
+the desired solution respectively. </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b4">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>20</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>10</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 10pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Import Stock
+Solution from
+Molarity Calculator</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>181</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Stock Solution</string>
+       </property>
+       <widget class="QComboBox" name="molarityCombo1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Molar (M)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Millimolar (mM)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Micromolar (uM)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Custom</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPlainTextEdit" name="molarity1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="volumeCombo1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Liter (L)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Milliliter (ml)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Microliter (ul)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Custom</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPlainTextEdit" name="volume1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Molarity (M1)</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radvol1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Volume (V1)</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>140</y>
+         <width>181</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Desired Solution</string>
+       </property>
+       <widget class="QRadioButton" name="radmol2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Molarity (M2)</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="molarityCombo2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Molar (M)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Millimolar (mM)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Micromolar (uM)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Custom</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPlainTextEdit" name="volume2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="volumeCombo2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Liter (L)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Milliliter (ml)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Microliter (ul)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Custom</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPlainTextEdit" name="molarity2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radvol2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Volume (V2)</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QTextBrowser" name="addSol">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>190</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="addDil">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>280</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>166</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Solute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>260</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Diluent</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="addSolCombo">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>220</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Grams (g)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Milligrams (mg)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="addDilCombo">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>310</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Liter (L)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Milliliter (ml)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Microliter (ul)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="b7">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>20</y>
+         <width>51</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>10</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 10pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Clear
+All</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="nonMolar">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>130</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Non-Molar Calculation</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b5">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>90</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>10</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(197, 215, 255);
+font: 63 10pt &quot;Lato Semibold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Calculate Desired
+Variables</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Formula</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>578</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuABout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionDisclaimer"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuABout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionDisclaimer">
+   <property name="text">
+    <string>Disclaimer</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>formulaInput</tabstop>
+  <tabstop>b1</tabstop>
+  <tabstop>massOutput</tabstop>
+  <tabstop>subGram</tabstop>
+  <tabstop>soluteWeight</tabstop>
+  <tabstop>molValueOutput</tabstop>
+  <tabstop>b2</tabstop>
+  <tabstop>subGram2</tabstop>
+  <tabstop>soluteWeight2</tabstop>
+  <tabstop>weightCheck</tabstop>
+  <tabstop>radmol</tabstop>
+  <tabstop>radsol</tabstop>
+  <tabstop>radvol</tabstop>
+  <tabstop>molarity</tabstop>
+  <tabstop>molarityCombo</tabstop>
+  <tabstop>molValueOutput2</tabstop>
+  <tabstop>molarityCombo_2</tabstop>
+  <tabstop>volume</tabstop>
+  <tabstop>volumeCombo</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
