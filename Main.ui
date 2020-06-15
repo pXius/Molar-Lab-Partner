@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>578</width>
-    <height>504</height>
+    <width>594</width>
+    <height>525</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -72,7 +72,7 @@ H2O, [2H]2O, CaCl2, Au, CH3COOH, EtOH, CuSO4.5H2O, (COOH)2, AgCuRu4(H)2[CO]12{PP
        <x>10</x>
        <y>70</y>
        <width>561</width>
-       <height>391</height>
+       <height>411</height>
       </rect>
      </property>
      <property name="tabPosition">
@@ -732,7 +732,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>140</y>
+         <y>164</y>
          <width>181</width>
          <height>211</height>
         </rect>
@@ -867,7 +867,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>200</x>
-         <y>140</y>
+         <y>164</y>
          <width>181</width>
          <height>211</height>
         </rect>
@@ -1005,7 +1005,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>190</y>
+         <y>214</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1015,7 +1015,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>280</y>
+         <y>304</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1025,7 +1025,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>166</y>
+         <y>190</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1038,7 +1038,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>260</y>
+         <y>284</y>
          <width>151</width>
          <height>21</height>
         </rect>
@@ -1051,7 +1051,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>220</y>
+         <y>244</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1071,7 +1071,7 @@ Molarity Calculator</string>
        <property name="geometry">
         <rect>
          <x>400</x>
-         <y>310</y>
+         <y>334</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1192,8 +1192,8 @@ Variables</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>578</width>
-     <height>20</height>
+     <width>594</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
