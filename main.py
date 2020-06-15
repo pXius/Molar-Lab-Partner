@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtWidgets import QMessageBox
-from molarmass import Formula
+from lib.molarmass import Formula
 
 class Ui(QtWidgets.QMainWindow):
 	def __init__(self):

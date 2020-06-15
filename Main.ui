@@ -82,7 +82,7 @@ H2O, [2H]2O, CaCl2, Au, CH3COOH, EtOH, CuSO4.5H2O, (COOH)2, AgCuRu4(H)2[CO]12{PP
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab_4">
       <attribute name="title">
@@ -234,7 +234,7 @@ and m is the solute weight.</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>sol.png</pixmap>
+        <pixmap>images/sol.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -291,7 +291,7 @@ and m is the solute weight.</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>mass.png</pixmap>
+        <pixmap>images/mass.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -572,7 +572,7 @@ and V is liters of solution.</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>equal.png</pixmap>
+        <pixmap>images/equal.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -591,7 +591,7 @@ and V is liters of solution.</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>divide.png</pixmap>
+        <pixmap>images/divide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -679,7 +679,7 @@ font: 63 12pt &quot;Lato Semibold&quot;;</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>dilute.png</pixmap>
+        <pixmap>images/dilute.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
