@@ -1,5 +1,8 @@
 # Molar-Lab-Partner
-Molar-Lab-Partner is a GUI based calculator that computes Molar Mass and Dilution Ratios for any elemental composition.
+Molar-Lab-Partner is a GUI based calculator that computes Molar Mass, Dilution, and Composition ratios for any chemical formula.
+The calculator is completely standalone and does not require an internet connection. 
+
+![header image](https://github.com/pXius/Molar-Lab-Partner/blob/development/images/Example.png)
 
 ## OS Availability
 
@@ -22,7 +25,7 @@ With Python 3 installed, run the following in terminal:
 ### Installing
 
 #### Windows
-An .exe installer is available in the release section.  
+An .exe installer is available in the [release section](https://github.com/pXius/Molar-Lab-Partner/releases).  
 Install and run.
 
 If you prefer to run off the python files directly, follow the Linux instructions.
