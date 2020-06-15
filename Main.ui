@@ -82,7 +82,7 @@ H2O, [2H]2O, CaCl2, Au, CH3COOH, EtOH, CuSO4.5H2O, (COOH)2, AgCuRu4(H)2[CO]12{PP
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_4">
       <attribute name="title">
